@@ -1,1 +1,16 @@
-Print('test')
+from tkinter import *
+
+root = Tk()
+root.title('Hunt the Bear')
+
+img = PhotoImage(file='bear.png')
+root.tk.call('wm', 'iconphoto', root._w, img)
+
+#root.iconbitmap('C:/Users/Asus/Desktop/Hunt the BEar/bear.PNG')
+
+root.geometry("1000x800")
+
+txt = Text (root, width=60,height=20,font=("Helvetica", 20))
+txt.pack()
+
+root.mainloop()
